@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  -webkit-box-shadow: 7px 6px 0px 0px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 7px 6px 0px 0px rgba(0, 0, 0, 0.94);
+  box-shadow: 7px 6px 0px 0px rgba(0, 0, 0, 0.94);
+  overflow: hidden;
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translate(-10px, -10px);
+  -webkit-box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 0.94);
+  -moz-box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 0.94);
+  box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 0.94);
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-label {
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-date {
+  color: var(--black);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--black);
+}
+
+.card-title:hover {
+    color: var(--yellow);
+  }
+
+.card-description {
+  font-size: 12px;
+  color: var(--grey);
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+}
+
+.card-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-author span {
+  font-size: 14px;
+  color: var(--black);
+}
